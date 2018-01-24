@@ -1,0 +1,19 @@
+Exemplo de como gerar uma lista de 100 pontos com coordenadas no intervalo [-500, 500]
+    - python3 genpoints.py 100 -500 500
+    - python3 genpoints.py 100 -500 500 > pontos.txt
+
+Exemplo de como encontrar os pontos com menor distância possível
+    - python3 mindst.py <0|1> -> 0 para utilizar força bruta, 1 para utilizar divisão e conquista
+    - p1X p1Y
+    - p2X p2Y
+    ...
+    - pnX pnY
+
+Exemplo de como encontrar os pontos com menor distância possível usando pontos gerados por genpoints.py
+    - python3 mindst.py < pontos.txt
+    ou
+    - python3 genpoints.py <n> <l> <r> | python3 mindst.py
+    ou
+    - python3 genpoints.py <n> <l> <r> > pontos.txt && python3 mindst.py < pontos.txt
+
+    Este último salva a lista de pontos gerados no arquivo pontos.txt
